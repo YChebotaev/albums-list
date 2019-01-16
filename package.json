@@ -1,0 +1,35 @@
+{
+  "name": "albums-list",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "apollo-boost": "0.1.23",
+    "apollo-cache-inmemory": "1.3.12",
+    "apollo-client": "2.4.8",
+    "apollo-link-context": "1.0.12",
+    "apollo-link-http": "latest",
+    "graphql": "14.1.0",
+    "graphql-tag": "2.10.0",
+    "normalize.css": "8.0.1",
+    "react": "16.8.0-alpha.0",
+    "react-apollo": "2.3.3",
+    "react-apollo-hooks": "0.2.1",
+    "react-dom": "16.8.0-alpha.0",
+    "react-error-boundary": "1.2.3",
+    "react-loader-spinner": "2.3.0",
+    "react-scripts": "2.0.3",
+    "react-spinkit": "latest",
+    "react-suspense-image-loader": "1.0.19",
+    "typeface-roboto": "0.0.54"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+}

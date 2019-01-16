@@ -1,0 +1,11 @@
+.TopBar {
+  height: 4rem;
+  background-color: #333333;
+}
+
+.TopBar__inner {
+  height: 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}

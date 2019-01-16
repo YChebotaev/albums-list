@@ -1,0 +1,30 @@
+.Album {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 1rem;
+}
+
+.Album__cover {
+  margin-right: 40px;
+}
+
+.Album__image {
+  width: 260px;
+}
+
+.Album__info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  flex: 1 1 100%;
+}
+
+.Album__artist {
+  font-size: 1.5rem;
+}
+
+.Album__title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

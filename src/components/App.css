@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+.App__header {
+}
+
+.App__main {
+  flex: 1 1 100%;
+}
+
+.App__footer {
+}
