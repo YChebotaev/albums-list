@@ -1,30 +1,63 @@
-.Album {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-bottom: 1rem;
-}
-
-.Album__cover {
-  margin-right: 40px;
-}
-
-.Album__image {
-  width: 260px;
-}
-
-.Album__info {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  flex: 1 1 100%;
+.Album__title {
+  font-size: 2rem;
 }
 
 .Album__artist {
   font-size: 1.5rem;
 }
 
-.Album__title {
-  font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+@media screen and (min-width: 601px) {
+  .Album {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 1rem;
+  }
+
+  .Album__cover {
+    margin-right: 40px;
+  }
+
+  .Album__image {
+    width: 260px;
+  }
+
+  .Album__info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex: 1 1 100%;
+  }
+
+  .Album__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Album {
+    margin-bottom: 3rem;
+  }
+
+  .Album__cover {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .Album__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .Album__info {
+    text-align: center;
+  }
+
+  .Album__title {
+    margin-bottom: 1rem;
+  }
+
+  .Album__artist {
+    margin-bottom: 1rem;
+  }
 }
