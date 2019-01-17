@@ -30,6 +30,7 @@ const getAlbumCover = album => {
 const renderAlbum = album => {
   return (
     <Album
+      key={album.id}
       id={album.id}
       title={album.title}
       artist={album.artist}
@@ -71,12 +72,12 @@ export const AlbumsList = ({ albums }) => {
       }
     );
     for (let year of years) {
-      children.push(<Year>{year}</Year>);
+      children.push(<Year key="year">{year}</Year>);
       for (let { month, name } of months) {
         const thisMonth = `${year}-${month}`;
         const albumsInThisMonth = albumsByYearMonth[thisMonth];
         if (albumsInThisMonth && albumsInThisMonth.length) {
-          children.push(<Month>{name}</Month>);
+          children.push(<Month key={thisMonth}>{name}</Month>);
           children.push(albumsInThisMonth.map(renderAlbum));
         }
       }
