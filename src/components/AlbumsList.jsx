@@ -16,13 +16,24 @@ const findMaxYear = albums =>
     return Math.max(year, album.yearReleased);
   }, -Infinity);
 
+const getAlbumCover = album => {
+  const { cover, coverUrl } = album;
+  if (coverUrl && coverUrl !== "undefined") {
+    return coverUrl;
+  } else if (cover && cover.url) {
+    return cover.url;
+  } else {
+    return "https://f4.bcbits.com/img/a4139357031_10.jpg";
+  }
+};
+
 const renderAlbum = album => {
   return (
     <Album
       id={album.id}
       title={album.title}
       artist={album.artist}
-      cover={album.cover.url}
+      cover={getAlbumCover(album)}
     />
   );
 };

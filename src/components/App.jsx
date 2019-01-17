@@ -19,6 +19,7 @@ export const App = () => {
           yearReleased
           monthReleased
           dateReleased
+          coverUrl
           cover {
             url
           }
